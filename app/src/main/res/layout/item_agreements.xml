@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/agreements_item_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/agreements_item_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Айди согласования:"
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/agreements_item_id_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:maxLines="4"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/agreements_item_id"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/agreements_item_department_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Айди департамента:"
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/agreements_item_department_id_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:maxLines="4"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/agreements_item_department_id"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/agreements_item_viewed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Просмотрено:"
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/agreements_item_viewed_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:maxLines="4"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/agreements_item_viewed"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/agreements_item_agreed_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Дата согласования:"
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/agreements_item_agreed_at_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:maxLines="4"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/agreements_item_agreed_at"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

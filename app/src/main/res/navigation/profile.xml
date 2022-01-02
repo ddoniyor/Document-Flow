@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_profile"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.documentflow.view.fragment.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_userDataFragment"
+            app:destination="@id/userDataFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_agreementsFragment"
+            app:destination="@id/agreementsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDataFragment"
+        android:name="com.example.documentflow.view.fragment.profile.UserDataFragment"
+        android:label="fragment_user_data"
+        tools:layout="@layout/fragment_user_data" />
+    <fragment
+        android:id="@+id/agreementsFragment"
+        android:name="com.example.documentflow.view.fragment.profile.AgreementsFragment"
+        android:label="fragment_agreements"
+        tools:layout="@layout/fragment_agreements" >
+        <action
+            android:id="@+id/action_agreementsFragment_to_detailAgreementsFragment"
+            app:destination="@id/detailAgreementsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailAgreementsFragment"
+        android:name="com.example.documentflow.view.fragment.profile.DetailAgreementsFragment"
+        android:label="fragment_detail_agreements"
+        tools:layout="@layout/fragment_detail_agreements" />
+</navigation>

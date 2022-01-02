@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.documents.DetailDocumentsFragment"
+    >
+    <ProgressBar
+        android:id="@+id/fragment_detail_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/fragment_detail_documents_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/profile_layout_margin"
+            >
+            <LinearLayout
+                android:id="@+id/fragment_detail_documents_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:text="Номер документа:" />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_id_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fragment_detail_documents_id"
+                        android:gravity="center|left"
+                        android:maxLines="4"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:text="Название документа:" />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fragment_detail_documents_name"
+                        android:gravity="center|left"
+                        android:maxLines="3"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_sender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:text="Отправитель:" />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_sender_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fragment_detail_documents_sender"
+                        android:gravity="center|left"
+                        android:maxLines="3"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:text="Тип документа:" />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_type_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fragment_detail_documents_type"
+                        android:gravity="center|left"
+                        android:maxLines="3"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_registration_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:text="Регистрационный номер:" />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_registration_number_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fragment_detail_documents_registration_number"
+                        android:gravity="center|left"
+                        android:maxLines="3"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_entry_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:text="Дата прихода:" />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_entry_date_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fragment_detail_documents_entry_date"
+                        android:gravity="center|left"
+                        android:maxLines="3"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_outgoing_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:text="Номер распределения:" />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_outgoing_number_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fragment_detail_documents_outgoing_number"
+                        android:gravity="center|left"
+                        android:maxLines="3"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_distribution_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:text="Дата распределения:" />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_distribution_date_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fragment_detail_documents_distribution_date"
+                        android:gravity="center|left"
+                        android:maxLines="3"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center|left"
+                        android:text="Документ"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/fragment_detail_documents_content_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/fragment_detail_documents_content"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragment_detail_documents_send_to_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отправить на согласование"
+                android:layout_below="@+id/fragment_detail_documents_linear"
+                android:layout_marginTop="20dp"
+                />
+            <!--<com.google.android.material.button.MaterialButton
+                android:id="@+id/fragment_detail_documents_download_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Скачать pdf"
+                android:layout_below="@+id/fragment_detail_documents_send_to_agreement"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                />
+-->
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

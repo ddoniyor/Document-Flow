@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">СЭД</string>
+
+    <!--profile array list-->
+    <string-array name="titles">
+        <item>Создать документ</item>
+        <item>Согласование</item>
+        <item>Мои данные</item>
+        <item>Выйти</item>
+    </string-array>
+
+    <!--bottom navigation -->
+    <string name="documents">Документы</string>
+    <string name="profile">Профиль</string>
+    <string name="search">Поиск</string>
+
+    <!--login activity-->
+    <string name="login_activity_enter">Войти</string>
+    <string name="login_activity_password">Пароль</string>
+    <string name="login_activity_username">Логин</string>
+    <string name="login_activity_authorization">Авторизация</string>
+
+    <string name="login_activity_enter_full_phone_number">Введите правильный номер телефона.</string>
+    <string name="login_activity_fill_all_fields">Заполните все поля.</string>
+
+    <!--response handler-->
+    <string name="not_found_error_message">Не найден</string>
+    <string name="network_error_message">Что-то пошло не так.</string>
+    <string name="remote_error_message">Сервер недоступен, пожалуйста попробуйте позже.</string>
+    <string name="unknown_error_message">Неизвестная ошибка.</string>
+
+    <!--profile fragment-->
+    <string name="exit_message">Выход</string>
+    <string name="exit_description_message">Вы точно хотите выйти?</string>
+    <string name="cancel_message">Отмена</string>
+    <string name="no_message">Нет</string>
+    <string name="yes_message">Да</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

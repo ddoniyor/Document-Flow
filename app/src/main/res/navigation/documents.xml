@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_documents"
+    app:startDestination="@id/documentsFragment">
+
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="com.example.documentflow.view.fragment.documents.DocumentsFragment"
+        android:label="fragment_documents"
+        tools:layout="@layout/fragment_documents" >
+        <action
+            android:id="@+id/action_documentsFragment_to_detailDocumentsFragment"
+            app:destination="@id/detailDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailDocumentsFragment"
+        android:name="com.example.documentflow.view.fragment.documents.DetailDocumentsFragment"
+        android:label="fragment_detail_documents"
+        tools:layout="@layout/fragment_detail_documents" >
+    </fragment>
+
+
+</navigation>
